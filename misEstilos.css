@@ -14,7 +14,7 @@
 
 *{
     box-sizing: border-box;
-    border: 1px solid red;
+   /* border: 1px solid red;*/
    /* font-family: 'Inter', sans-serif;*/
 }
 
@@ -70,11 +70,6 @@ nav ul li a:hover{
     color: #FFFF00;
 }
 
-/*no necesario*/
-nav ul li:hover {
-    background-color: #ff0000;
-}
-
 /*SECCION DE MI CUENTA*/
 .cuenta{
     display: flex;
@@ -100,6 +95,10 @@ nav ul li:hover {
     font-family: 'Inter', sans-serif;
 }
 
+.cuenta .texto p:hover{
+    color: #FFFF00;
+}
+
 .cuenta .flag{
     padding: 0 ;
     margin: 0; 
@@ -121,9 +120,7 @@ nav ul li:hover {
 
 .titulo{
     position: absolute;
-    top: 120px;
-    left: 140px;
-    padding: 0;
+    padding: 110px 0 0 90px;
     margin: 0; 
 }
 
@@ -150,6 +147,306 @@ nav ul li:hover {
     padding: 0;
     margin: 0; 
 }
+
+/*SECCION INFO*/
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    background: #F2F6F6;
+    font-family: 'Inter',times;
+}
+
+.info div{
+    padding: 0px 20px;
+    margin: 0;
+
+}
+
+.info input{
+    padding: 15px 0px;
+    margin: 0;
+    border-radius: 15px;
+    font-family: 'Inter',times;
+    background-color: -#fff;
+    text-align: center;
+}
+
+/*SECCION INFO*/
+.cardMasajes{
+    width: 100%;
+    background: #fff;
+    padding: 100px 70px 100px 70px;
+    margin: 0;
+    display: flex;
+    font-family: 'Inter',times;
+    justify-content: space-between;
+}
+
+.productoCard{
+    width: 350px; /*350x265*/
+    /*height: 450px;*/
+    text-align: center;
+    margin: 0 134px 0 0;
+    padding:0;
+
+}
+
+.productoCard:last-child{
+    margin-right: 0; /* Sin margen para la última card */
+}
+
+.productoCard .tituloCard{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Inter',times;
+    font-size: 32px;
+    background: #A3A656 ;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0;
+}
+.productoCard img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.productoCard p{
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+    padding: 4px 0;
+    margin: 0;
+}
+
+.productoCard .infoCard{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.infoCard h1{
+    font-size: 39px;
+    font-weight: bold;
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+.infoCard .botonReservar{
+    background-color: #A3A656 ;
+    border-radius: 35px;
+    width: 40%;
+    height: 40px;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+}
+.infoCard .botonReservar:hover{
+    background-color: #384001;
+}
+
+.infoCard .botonReservar a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*SECCION DE MASAJES*/
+.paquete{
+    width: 100%;
+    height: 770px;
+    background: #F2F6F6;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter',times;
+    text-align: center;
+    align-items: center;
+}
+
+.paquete h1{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    align-items: center;
+    font-family: 'Inter',times;
+    font-weight: bold;
+    padding: 50px 0;
+    margin: 0;
+}
+
+.paquete .paquetesCard{
+    width: 100%;
+    height: 80%;
+    background: #F2F6F6;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Inter',times;
+}
+
+.paquetesCard .subCard{
+    width: 270px; 
+    height: auto;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding:0;
+}
+
+.subCard .borde{ 
+    width: 255px;
+    height: 255px;
+    align-items: stretch;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    border: 1px solid red;
+}
+
+.borde .imagen{
+    width: 233px;
+    height: 233px;
+    border-radius: 50%;
+    border: 22px solid #384001;
+    background: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.paquetesCard .subCard h1{
+    padding: 5px 0;
+    margin: 0;
+}
+
+.subCard .botonVerCondiciones{
+    background-color: #A3A656 ;
+    border-radius: 35px;
+    width: auto;
+    height: 50px;
+    align-content: center;
+    padding:  0;
+    margin: 0;
+}
+
+.subCard .botonVerCondiciones:hover{
+    background-color: #384001;
+}
+.subCard .botonVerCondiciones a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.subCard ul{
+    padding: 0 0 0 70px;
+}
+
+.subCard ul li{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 80%;
+}
+
+
+/*SECCION DE PIE PAGINA*/
+.piePagina{
+    width: 100%;
+    height: 97px;
+    background-color: #384001;
+    padding: 0;
+    margin: 0;  
+    display: flex; 
+}
+
+
+.piePagina .avisos{
+    list-style-type: none;   
+    width: 70%;
+    height: 100%;
+    padding: 0 70px;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.piePagina .avisos li {
+    padding: 0 12px 0 0;
+    margin:0;
+    background-color:#384001; 
+}
+
+.piePagina .avisos li a{
+    color:#A3A656;
+    font-weight: 400;
+    font-size: 16px; 
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.piePagina .avisos li a:hover{
+    color: #FFFF00;
+}
+
+.piePagina .redes{
+    list-style-type: none;
+    width: 40%; 
+    height: 100%;
+    padding: 0 ;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.piePagina .redes li {
+    padding: 0 12px 0 0;
+    margin:0;
+    background-color: #384001; 
+}
+
+.piePagina .redes li a{
+    color: #A3A656;
+    font-weight: 400;
+    font-size: 16px; 
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+.piePagina .redes li a:hover{
+    color: #FFFF00;
+}
+
+
+
+
+
+
+
+
 
 
 
