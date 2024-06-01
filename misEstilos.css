@@ -307,29 +307,22 @@ nav ul li a:hover{
     align-items: center;
     margin: 0;
     padding:0;
+    
 }
 
 .subCard .borde{ 
-    width: 255px;
-    height: 255px;
-    align-items: stretch;
-    justify-content: center;
-    display: flex;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: 15px solid #384001;
     padding: 0;
-    margin: 0;
-    border: 1px solid red;
+    margin: 0;   
 }
 
 .borde .imagen{
     width: 233px;
     height: 233px;
-    border-radius: 50%;
-    border: 22px solid #384001;
-    background: #FFFFFF;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    padding: 0;
+    padding: 50px 50px 50px 50px;
     margin: 0;
 }
 
